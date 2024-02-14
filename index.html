@@ -10,10 +10,104 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="">
+   <main class="bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
+     <!--home starts-->
+     <section id="home" class=" text-center lg:py-96  ">
+<h1 class="text-9xl text-white font-extrabold text-center font-poppin">ALPHABET CLASH</h1>
+<p class="text-white text-2xl my-10">Unleash your keyboard Kung Fu: Press "Enter" to play</p>
+<button onclick="play()" class="btn bg-white font-bold">Play Now</button>
+     </section>
+     <!--play section-->
+ 
+     <section id="play-section" class=" hidden">
+
+        <div class="flex flex-col justify-center items-center gap-24 pt-20">
+            <!--screen-->
+
+            <div class="artboard artboard-horizontal phone-6 border-8 border-gray-800  rounded-lg bg-[#FFFFFFB3]">
+                <div class=" flex justify-center ">
+                    <p class="bg-slate-800 text-white p-2 rounded-b-md">Don't look at keyboard while playing....</p>
+                </div>
+
+                <div class="flex justify-center items-center h-full">
+                    <p class="text-8xl font-bold text-black ">Y</p>
+                </div>
+            </div>
+
+            <!--keyboard starts -->
+           <div id="keyboard-container">
+            <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd">q</kbd>
+                <kbd class="kbd">w</kbd>
+                <kbd class="kbd">e</kbd>
+                <kbd class="kbd">r</kbd>
+                <kbd class="kbd">t</kbd>
+                <kbd class="kbd">y</kbd>
+                <kbd class="kbd">u</kbd>
+                <kbd class="kbd">i</kbd>
+                <kbd class="kbd">o</kbd>
+                <kbd class="kbd">p</kbd>
+              </div> 
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd">a</kbd>
+                <kbd class="kbd">s</kbd>
+                <kbd class="kbd">d</kbd>
+                <kbd class="kbd">f</kbd>
+                <kbd class="kbd">g</kbd>
+                <kbd class="kbd">h</kbd>
+                <kbd class="kbd">j</kbd>
+                <kbd class="kbd">k</kbd>
+                <kbd class="kbd">l</kbd>
+              </div> 
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd">z</kbd>
+                <kbd class="kbd">x</kbd>
+                <kbd class="kbd">c</kbd>
+                <kbd class="kbd">v</kbd>
+                <kbd class="kbd">b</kbd>
+                <kbd class="kbd">n</kbd>
+                <kbd class="kbd">m</kbd>
+                <kbd class="kbd">/</kbd>
+              </div>
+           </div>
+
+           <!--buttons-->
+           <div class="flex justify-between w-3/5 ">
+            <button class="btn bg-[#893889] text-white border-none rounded-full">
+                Life
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+               <span>1</span>
+              </button>
+              <button class="btn bg-[#360490] text-white border-none rounded-full">
+                Score
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                <span>1</span>
+
+              </button>
+           </div>
+        </div>
+ 
+     </section>
+     <!--score section-->
+
+     
+     <section id="score" class="flex  justify-center items-center min-h-screen text-center hidden ">
+        <div class="text-white space-y-7 bg-[#FFFFFF33] p-10 rounded-2xl ">
+            <h1 class="text-7xl">
+                <span class="font-extrabold ">Score:</span>
+                <span>14</span>
+            </h1>
+            <button class="btn bg-white text-black">Try Again</button>
+            <p>Practice will make you Pro.</p>
+         </div>
+     
+     </section>
+   </main>
     
 
 
     <script src="script/script.js"></script>
+    <script src="script/utility.js"></script>
 </body>
 </html>
